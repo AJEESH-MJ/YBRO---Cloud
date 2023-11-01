@@ -69,3 +69,12 @@ export const loginController = async (req, res) => {
     return res.status(500).json({ success:false, msg: error.message });
   }
 };
+
+//test controller
+export const testController = async (req, res) => {
+  try {
+    res.status(200).json({ success: true, msg: "Test controller success" });
+  } catch (error) {
+    return res.status(500).json({ success:false, msg: error.message });
+  }
+};

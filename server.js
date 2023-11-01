@@ -22,7 +22,7 @@ app.use("/api/v1/auth", authRoutes);
 
 // Define a route
 app.get("/", (req, res) => {
-    res.send("Welcome");
+    res.send("Hello");
 });
 
 // PORT

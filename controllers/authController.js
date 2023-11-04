@@ -15,9 +15,8 @@ export const registerController = async (req, res) => {
 
     // If user exists
     if (existingUser) {
-      return res
-        .status(400)
-        .json({ success:false, msg: "User already exists, please login to continue." });
+      return res.status(409).json({ success: false, msg: "User already exists, please login to continue." });
+
     }
 
     // Register user
